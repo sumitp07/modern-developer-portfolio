@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en" class="h-full scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Portfolio of Your Name — an Electronics & Computer Engineering (ECE) student specializing in IoT, embedded systems, and data-driven projects; aspiring machine learning engineer."
+		/>
+		<meta name="robots" content="index,follow" />
+		<meta name="author" content="Your Name" />
+		<meta name="keywords" content="ECE student, IoT, embedded systems, machine learning, ML, edge AI, sensors, microcontrollers, Python" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Canonical should be an absolute URL. Replace with your real domain when deployed. -->
+		<!-- <link rel="canonical" href="https://your-domain.com/" /> -->
+
+		<title>Your Name | ECE (IoT) & Aspiring ML Engineer</title>
+
+		<!-- Open Graph (social sharing) -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Your Name | ECE (IoT) & Aspiring ML Engineer" />
+		<meta
+			property="og:description"
+			content="ECE student specializing in IoT and embedded systems, building practical projects and working toward machine learning engineering."
+		/>
+		<meta property="og:locale" content="en_US" />
+		<!-- Provide a real absolute URL + image later -->
+		<!-- <meta property="og:url" content="https://your-domain.com/" /> -->
+		<!-- <meta property="og:image" content="https://your-domain.com/og-image.png" /> -->
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Your Name | ECE (IoT) & Aspiring ML Engineer" />
+		<meta
+			name="twitter:description"
+			content="Portfolio of an ECE student focused on IoT + embedded systems, aspiring ML engineer."
+		/>
+		<!-- <meta name="twitter:image" content="https://your-domain.com/og-image.png" /> -->
+
+		<!-- Tailwind CSS (CDN) - simple setup for static sites -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Optional: Tailwind config (keep minimal) -->
+		<!--
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {},
+				},
+			};
+		</script>
+		-->
+
+		<!-- Your custom CSS (loads after Tailwind so it can override Tailwind styles when needed) -->
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body id="top" class="min-h-full bg-slate-950 text-slate-100 antialiased">
+		<!--
+			Accessibility: Skip link helps keyboard users jump directly to the main content.
+			(Style it later with CSS; it will still work without styling.)
+		-->
+		<a
+			class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-slate-100 ring-1 ring-white/15"
+			href="#main"
+		>
+			Skip to main content
+		</a>
+
+		<!-- Site Header: Branding + primary navigation -->
+		<header class="site-header border-b border-white/10" role="banner">
+			<div class="site-header__inner container mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-4 py-4 sm:flex-row sm:items-center sm:gap-6">
+				<!-- Brand / identity (keep this minimal and semantic) -->
+				<a class="brand text-base font-semibold tracking-tight text-slate-100 transition-colors duration-200 hover:text-white" href="#top" aria-label="Go to top">
+					<span class="brand__name">Your Name</span>
+				</a>
+
+				<!-- Primary Navigation -->
+				<nav class="primary-nav w-full" aria-label="Primary">
+					<ul class="primary-nav__list flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-300 sm:justify-end">
+						<li class="primary-nav__item">
+							<a class="primary-nav__link inline-flex rounded-md transition-colors duration-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20" href="#about">About</a>
+						</li>
+						<li class="primary-nav__item">
+							<a class="primary-nav__link inline-flex rounded-md transition-colors duration-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20" href="#skills">Skills</a>
+						</li>
+						<li class="primary-nav__item">
+							<a class="primary-nav__link inline-flex rounded-md transition-colors duration-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20" href="#projects">Projects</a>
+						</li>
+						<li class="primary-nav__item">
+							<a class="primary-nav__link inline-flex rounded-md transition-colors duration-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Main Content Wrapper: All page sections live here -->
+		<main id="main" class="site-main" tabindex="-1">
+			<!-- Hero Section: Name + tagline + key calls-to-action -->
+			<section class="hero border-b border-white/10 bg-gradient-to-b from-slate-950 to-slate-900/30" aria-labelledby="hero-title">
+				<div class="container mx-auto max-w-6xl px-4 py-20 sm:py-28">
+					<h1 id="hero-title" class="hero__title text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
+						Your Name
+					</h1>
+					<p class="hero__tagline mt-5 max-w-2xl text-xl leading-relaxed text-slate-200 sm:text-2xl">
+						Tagline that quickly explains what you do (e.g., “Frontend Developer building fast, accessible web apps”).
+					</p>
+
+					<!-- Optional supporting details (keep content flexible for growth) -->
+					<p class="hero__summary mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+						Short one-liner highlighting your focus, strengths, and the kind of work you’re looking for.
+					</p>
+
+					<!-- Primary actions (links for now; style later as buttons) -->
+					<nav class="hero__actions mt-10 flex flex-col gap-3 sm:flex-row" aria-label="Primary calls to action">
+						<a
+							class="hero__action inline-flex items-center justify-center rounded-lg bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-slate-200 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30 motion-reduce:transform-none"
+							href="#projects"
+						>
+							View projects
+						</a>
+						<a
+							class="hero__action inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-semibold text-slate-100 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20 motion-reduce:transform-none"
+							href="#contact"
+						>
+							Get in touch
+						</a>
+					</nav>
+				</div>
+			</section>
+
+			<!-- About Section: Brief bio + highlights -->
+			<section id="about" class="section section--about container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="about-title">
+				<header class="section__header mb-8">
+					<h2 id="about-title" class="section__title text-3xl font-semibold tracking-tight">About</h2>
+				</header>
+
+				<div class="section__content">
+					<p class="about__bio max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
+						Write a short bio: who you are, what you build, and what you care about.
+						Keep it 2–4 sentences for clarity.
+					</p>
+
+					<!-- Optional bullet highlights (add/remove items freely) -->
+					<ul class="about__highlights mt-6 grid gap-3 sm:grid-cols-3" aria-label="Highlights">
+						<li class="about__highlight rounded-lg border border-white/10 bg-white/5 p-4 text-sm text-slate-200">
+							Highlight #1 (e.g., 3+ years building React apps)
+						</li>
+						<li class="about__highlight rounded-lg border border-white/10 bg-white/5 p-4 text-sm text-slate-200">
+							Highlight #2 (e.g., strong focus on performance and accessibility)
+						</li>
+						<li class="about__highlight rounded-lg border border-white/10 bg-white/5 p-4 text-sm text-slate-200">
+							Highlight #3 (e.g., comfortable shipping end-to-end features)
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Skills Section: List your technical skills in a scannable format -->
+			<section id="skills" class="section section--skills container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="skills-title">
+				<header class="section__header mb-8">
+					<h2 id="skills-title" class="section__title text-3xl font-semibold tracking-tight">Skills</h2>
+				</header>
+
+				<div class="section__content">
+					<!--
+						Use lists for skills so it stays semantic and easy to style.
+						You can swap these for “skill cards” later without changing meaning.
+					-->
+					<div class="skills grid gap-6 md:grid-cols-3" aria-label="Skill categories">
+						<section class="skills__group" aria-labelledby="skills-frontend">
+							<h3 id="skills-frontend" class="skills__title text-base font-semibold tracking-tight">Frontend</h3>
+							<ul class="skills__list mt-4 flex flex-wrap gap-2">
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">HTML</li>
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">CSS</li>
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">JavaScript</li>
+							</ul>
+						</section>
+
+						<section class="skills__group" aria-labelledby="skills-tooling">
+							<h3 id="skills-tooling" class="skills__title text-base font-semibold tracking-tight">Tooling</h3>
+							<ul class="skills__list mt-4 flex flex-wrap gap-2">
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">Git</li>
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">Build tools (Vite/Webpack)</li>
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">Testing (Jest/Playwright)</li>
+							</ul>
+						</section>
+
+						<section class="skills__group" aria-labelledby="skills-other">
+							<h3 id="skills-other" class="skills__title text-base font-semibold tracking-tight">Other</h3>
+							<ul class="skills__list mt-4 flex flex-wrap gap-2">
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">Accessibility (WCAG)</li>
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">Performance</li>
+								<li class="skills__item rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-200">Design systems</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!-- Projects Section: Feature selected work as a list of project cards/articles -->
+			<section id="projects" class="section section--projects container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="projects-title">
+				<header class="section__header mb-8">
+					<h2 id="projects-title" class="section__title text-3xl font-semibold tracking-tight">Projects</h2>
+					<p class="section__subtitle mt-2 text-slate-300">A selection of things I’ve built.</p>
+				</header>
+
+				<div class="section__content">
+					<ul class="projects grid gap-6 md:grid-cols-2" aria-label="Selected projects">
+						<!-- Project Card #1 -->
+						<li class="projects__item">
+							<article class="project rounded-xl border border-white/10 bg-white/5 p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md motion-reduce:transform-none" aria-labelledby="project-1-title">
+								<header class="project__header">
+									<h3 id="project-1-title" class="project__title text-lg font-semibold tracking-tight">Project Name</h3>
+									<p class="project__meta mt-1 text-sm text-slate-400">Role · Tech stack · Year</p>
+								</header>
+								<p class="project__description mt-4 leading-relaxed text-slate-300">
+									Describe the problem, your contribution, and the outcome. Keep it crisp.
+								</p>
+								<ul class="project__highlights mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300 marker:text-slate-500" aria-label="Project highlights">
+									<li class="project__highlight">Impact/metric or key feature</li>
+									<li class="project__highlight">Technical highlight</li>
+								</ul>
+								<footer class="project__footer mt-6 flex flex-wrap gap-3" aria-label="Project links">
+									<a
+										class="project__link inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-100 transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
+										href="#"
+										aria-label="View live demo of Project Name"
+									>
+										Live
+									</a>
+									<a
+										class="project__link inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-100 transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
+										href="#"
+										aria-label="View source code for Project Name"
+									>
+										Source
+									</a>
+								</footer>
+							</article>
+						</li>
+
+						<!-- Project Card #2 -->
+						<li class="projects__item">
+							<article class="project rounded-xl border border-white/10 bg-white/5 p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md motion-reduce:transform-none" aria-labelledby="project-2-title">
+								<header class="project__header">
+									<h3 id="project-2-title" class="project__title text-lg font-semibold tracking-tight">Project Name</h3>
+									<p class="project__meta mt-1 text-sm text-slate-400">Role · Tech stack · Year</p>
+								</header>
+								<p class="project__description mt-4 leading-relaxed text-slate-300">
+									Brief description of what the project does and what makes it notable.
+								</p>
+								<footer class="project__footer mt-6 flex flex-wrap gap-3" aria-label="Project links">
+									<a
+										class="project__link inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-100 transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
+										href="#"
+										aria-label="View live demo of Project Name"
+									>
+										Live
+									</a>
+									<a
+										class="project__link inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-100 transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
+										href="#"
+										aria-label="View source code for Project Name"
+									>
+										Source
+									</a>
+								</footer>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Contact Section: Contact details + lightweight form -->
+			<section id="contact" class="section section--contact container mx-auto max-w-6xl px-4 py-14 sm:py-16" aria-labelledby="contact-title">
+				<header class="section__header mb-8">
+					<h2 id="contact-title" class="section__title text-3xl font-semibold tracking-tight">Contact</h2>
+					<p class="section__subtitle mt-2 text-slate-300">Have an opportunity or want to collaborate? Let’s talk.</p>
+				</header>
+
+				<div class="section__content grid gap-10 md:grid-cols-2">
+					<!-- Contact Details -->
+					<address class="contact space-y-3 text-sm not-italic" aria-label="Contact information">
+						<p class="contact__item text-slate-300">
+							<span class="contact__label text-slate-400">Email:</span>
+							<a class="contact__link font-medium text-slate-200 underline decoration-white/20 underline-offset-4 transition-colors duration-200 hover:text-white hover:decoration-white/50" href="mailto:you@example.com">you@example.com</a>
+						</p>
+						<p class="contact__item text-slate-300">
+							<span class="contact__label text-slate-400">Location:</span>
+							<span class="contact__value">Your City, Country</span>
+						</p>
+						<p class="contact__item text-slate-300">
+							<span class="contact__label text-slate-400">Social:</span>
+							<a class="contact__link font-medium text-slate-200 underline decoration-white/20 underline-offset-4 transition-colors duration-200 hover:text-white hover:decoration-white/50" href="#" rel="me noopener noreferrer" aria-label="Visit GitHub profile">GitHub</a>
+							<span aria-hidden="true"> · </span>
+							<a class="contact__link font-medium text-slate-200 underline decoration-white/20 underline-offset-4 transition-colors duration-200 hover:text-white hover:decoration-white/50" href="#" rel="me noopener noreferrer" aria-label="Visit LinkedIn profile">LinkedIn</a>
+						</p>
+					</address>
+
+					<!--
+						Optional Contact Form:
+						This is a semantic form structure only; you can wire it up later (Formspree, backend, etc.).
+					-->
+					<form class="contact-form rounded-xl border border-white/10 bg-white/5 p-6" action="#" method="post" aria-label="Contact form">
+						<fieldset class="contact-form__fieldset space-y-4">
+							<legend class="contact-form__legend text-base font-semibold tracking-tight">Send a message</legend>
+
+							<div class="contact-form__field">
+								<label class="contact-form__label text-sm font-medium text-slate-200" for="name">Name</label>
+								<input
+									class="contact-form__input mt-2 w-full rounded-lg border border-white/10 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-white/20"
+									id="name"
+									name="name"
+									type="text"
+									autocomplete="name"
+									required
+								/>
+							</div>
+
+							<div class="contact-form__field">
+								<label class="contact-form__label text-sm font-medium text-slate-200" for="email">Email</label>
+								<input
+									class="contact-form__input mt-2 w-full rounded-lg border border-white/10 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-white/20"
+									id="email"
+									name="email"
+									type="email"
+									autocomplete="email"
+									required
+								/>
+							</div>
+
+							<div class="contact-form__field">
+								<label class="contact-form__label text-sm font-medium text-slate-200" for="message">Message</label>
+								<textarea
+									class="contact-form__textarea mt-2 w-full rounded-lg border border-white/10 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-white/20"
+									id="message"
+									name="message"
+									rows="5"
+									required
+								></textarea>
+							</div>
+
+							<button
+								class="contact-form__submit mt-2 inline-flex w-full items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-slate-950 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-slate-200 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30 motion-reduce:transform-none"
+								type="submit"
+							>
+								Send message
+							</button>
+						</fieldset>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<!-- Site Footer: Copyright + secondary links -->
+		<footer class="site-footer border-t border-white/10" role="contentinfo">
+			<div class="site-footer__inner container mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-4 py-8 sm:flex-row sm:items-center sm:gap-6">
+				<p class="site-footer__copyright">
+					<small class="text-sm text-slate-400">© <span id="year" class="site-footer__year">2026</span> Your Name. All rights reserved.</small>
+				</p>
+				<nav class="footer-nav" aria-label="Footer">
+					<ul class="footer-nav__list text-sm">
+						<li class="footer-nav__item">
+							<a class="footer-nav__link font-medium text-slate-300 transition-colors duration-200 hover:text-white" href="#top">Back to top</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+		<!-- Scripts: Keep at the end of the body for better loading behavior -->
+		<script src="./script.js" defer></script>
+	</body>
+</html>
+
