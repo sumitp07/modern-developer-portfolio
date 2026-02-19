@@ -69,13 +69,28 @@
 		<!-- Site Header: Branding + primary navigation -->
 		<header class="site-header border-b border-white/10" role="banner">
 			<div class="site-header__inner container mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-4 py-4 sm:flex-row sm:items-center sm:gap-6">
-				<!-- Brand / identity (keep this minimal and semantic) -->
-				<a class="brand text-base font-semibold tracking-tight text-slate-100 transition-colors duration-200 hover:text-white" href="#top" aria-label="Go to top">
-					<span class="brand__name">Your Name</span>
-				</a>
+				<!-- Brand + mobile menu toggle (keeps header compact on small screens) -->
+				<div class="flex w-full items-center justify-between gap-4 sm:w-auto">
+					<!-- Brand / identity (keep this minimal and semantic) -->
+					<a class="brand text-base font-semibold tracking-tight text-slate-100 transition-colors duration-200 hover:text-white" href="#top" aria-label="Go to top">
+						<span class="brand__name">Your Name</span>
+					</a>
+
+					<!-- Mobile nav toggle (hidden on desktop) -->
+					<button
+						id="nav-toggle"
+						type="button"
+						class="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/5 px-3 py-2 text-sm font-semibold text-slate-100 transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20 sm:hidden"
+						aria-controls="primary-nav"
+						aria-expanded="false"
+						aria-label="Open menu"
+					>
+						Menu
+					</button>
+				</div>
 
 				<!-- Primary Navigation -->
-				<nav class="primary-nav w-full" aria-label="Primary">
+				<nav id="primary-nav" class="primary-nav mobile-nav w-full" aria-label="Primary">
 					<ul class="primary-nav__list flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-300 sm:justify-end">
 						<li class="primary-nav__item">
 							<a class="primary-nav__link inline-flex rounded-md transition-colors duration-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20" href="#about">About</a>
@@ -97,7 +112,7 @@
 		<!-- Main Content Wrapper: All page sections live here -->
 		<main id="main" class="site-main" tabindex="-1">
 			<!-- Hero Section: Name + tagline + key calls-to-action -->
-			<section class="hero border-b border-white/10 bg-gradient-to-b from-slate-950 to-slate-900/30" aria-labelledby="hero-title">
+			<section class="hero border-b border-white/10 bg-gradient-to-b from-slate-950 to-slate-900/30" aria-labelledby="hero-title" data-reveal>
 				<div class="container mx-auto max-w-6xl px-4 py-20 sm:py-28">
 					<h1 id="hero-title" class="hero__title text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
 						Your Name
@@ -130,7 +145,7 @@
 			</section>
 
 			<!-- About Section: Brief bio + highlights -->
-			<section id="about" class="section section--about container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="about-title">
+			<section id="about" class="section section--about container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="about-title" data-reveal>
 				<header class="section__header mb-8">
 					<h2 id="about-title" class="section__title text-3xl font-semibold tracking-tight">About</h2>
 				</header>
@@ -157,7 +172,7 @@
 			</section>
 
 			<!-- Skills Section: List your technical skills in a scannable format -->
-			<section id="skills" class="section section--skills container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="skills-title">
+			<section id="skills" class="section section--skills container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="skills-title" data-reveal>
 				<header class="section__header mb-8">
 					<h2 id="skills-title" class="section__title text-3xl font-semibold tracking-tight">Skills</h2>
 				</header>
@@ -199,7 +214,7 @@
 			</section>
 
 			<!-- Projects Section: Feature selected work as a list of project cards/articles -->
-			<section id="projects" class="section section--projects container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="projects-title">
+			<section id="projects" class="section section--projects container mx-auto max-w-6xl border-b border-white/10 px-4 py-14 sm:py-16" aria-labelledby="projects-title" data-reveal>
 				<header class="section__header mb-8">
 					<h2 id="projects-title" class="section__title text-3xl font-semibold tracking-tight">Projects</h2>
 					<p class="section__subtitle mt-2 text-slate-300">A selection of things I’ve built.</p>
@@ -273,7 +288,7 @@
 			</section>
 
 			<!-- Contact Section: Contact details + lightweight form -->
-			<section id="contact" class="section section--contact container mx-auto max-w-6xl px-4 py-14 sm:py-16" aria-labelledby="contact-title">
+			<section id="contact" class="section section--contact container mx-auto max-w-6xl px-4 py-14 sm:py-16" aria-labelledby="contact-title" data-reveal>
 				<header class="section__header mb-8">
 					<h2 id="contact-title" class="section__title text-3xl font-semibold tracking-tight">Contact</h2>
 					<p class="section__subtitle mt-2 text-slate-300">Have an opportunity or want to collaborate? Let’s talk.</p>

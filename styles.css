@@ -3,3 +3,68 @@
   Intentionally empty for now (structure-only phase).
   Add your CSS rules here when you’re ready.
 */
+
+/*
+  Mobile navigation (hamburger menu)
+  - Closed by default on small screens
+  - Smooth open/close via an "is-open" class toggle from JS
+*/
+
+.mobile-nav {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+  transition: max-height 200ms ease, opacity 200ms ease;
+}
+
+.mobile-nav.is-open {
+  max-height: 24rem;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Tailwind's `sm` breakpoint is 640px */
+@media (min-width: 640px) {
+  .mobile-nav {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-nav {
+    transition: none;
+  }
+}
+
+/*
+  Scroll reveal animation (driven by IntersectionObserver in script.js)
+  - Pre-reveal state: element is invisible and nudged down 24px
+  - Revealed state: fully visible at natural position
+  - Triggered once per element by adding the `is-visible` class from JS
+*/
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion: keep the opacity fade but skip the slide */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    transform: none;
+    transition: opacity 250ms ease;
+  }
+}
